@@ -1,2 +1,2 @@
-# superawesomeink.github.io
+# Super
 Super Awesome Ink Website

@@ -1,0 +1,182 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'ArialRoundedMTBold';
+  src: url('ArialRoundedMTBold.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Links */
+a {
+  color: #2b2b2b;
+  text-decoration:none;
+}
+
+a:focus,
+a:hover {
+  color: #2b2b2b;
+  text-decoration:none;
+}
+
+/* Base Structure */
+
+html, body {
+  height: 100%;
+  background-color: #fff;
+}
+
+body {
+  color: #2b2b2b;
+  font-family: 'ArialRoundedMTBold';
+  text-align: center;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+headline {
+  font-family: 'ArialRoundedMTBold';
+  font-size:18px;
+  text-align: center;	
+  background: linear-gradient(to right, #FF1786, #FFB64C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#mainContent {
+
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+/* Typed.js Cursor */
+
+.typed-cursor {
+	font-family: 'ArialRoundedMTBold';
+	color: #FFB64C;
+	font-size:28px;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* Images */
+
+.img-center {
+  margin: 0 auto;
+}
+
+/* Wrappers & Containers */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding */
+
+.inner {
+  padding: 30px;
+}
+
+.cover {
+  padding: 0 20px;
+}
+
+/* Footer */
+
+#bottomBar {
+  -webkit-animation-delay: 2.8s;
+  -moz-animation-delay: 2.8s;
+  animation-delay: 2.5s;
+}
+
+.mastfoot {
+	width: 100%; 
+	opacity:0;
+  background: linear-gradient(to right, #FF1786, #FFB64C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Vertical centering */
+.site-wrapper-inner {
+	vertical-align: middle;
+}
+
+/* Handle the widths */  
+
+.cover-container {
+  width: 100%; 
+}
+
+/* Media Queries for Different Device Sizes */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+		
+  /* Pull out the footer */
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	
+  /* Pull out the footer */
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  /* Pull out the footer */
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+

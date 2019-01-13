@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="">
+    	<meta name="author" content="Super Awesome Inc">
+    	
+		<!-- Site Title -->
+		<title>Super Awesome Ink</title>
+		
+		<!-- (Bootstrap) Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+		<!-- CSS -->
+    	<link href="./css/cover.css" rel="stylesheet">
+    	<link href="./css/twemoji-awesome.css" rel="stylesheet"> <!-- Allows us to use Twitter Emojis on our site! -->
+    	<link href="./css/animate.css" rel="stylesheet"> <!-- Allows for gnarly animations -->
+		
+		<link rel="icon" href="./images/favicon.ico">
+
+	</head>
+	
+	<body>
+	
+		<!-- Centers our content both vertically x horizontally -->
+		<div class="site-wrapper">
+	      <div class="site-wrapper-inner">
+	        <div class="cover-container">
+	          
+	          <!-- Content -->
+	          <div id="mainContent" class="inner cover">
+		           <p>
+		           	<headline class="cover-heading typed"></headline>
+		           </p>
+		           
+		           <br>
+		           
+		        
+		           <img class="img-responsive img-center" src="./images/flasks.svg" alt="Have an awesome day!" draggable="false">
+    		   
+		          
+	          </div>
+	
+			  <!-- Bottom Bar (Footer) -->
+	          <div id="bottomBar" class="mastfoot">
+	            <div class="inner">
+	         
+	              <p>2019 &#169; Super Awesome Ink Labs.</p>
+	            
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+		
+		<!-- JQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="./scripts/jquery.animate-colors-min.js"></script>
+		
+		<!-- (Bootstrap) Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+		<!-- Retina Image Support -->
+		<script type="text/javascript" src="./scripts/retina.min.js"></script>
+		
+		<!-- Typed.js -->
+		<script type="text/javascript" src="./scripts/typed.js"></script>
+		
+		<!-- Slide In Our Main Content -->
+		<script type="text/javascript">
+			var animationName = 'animated fadeIn';
+    		$(document).ready(function() {
+				$("#mainContent").addClass(animationName);
+				$("#bottomBar").css({ opacity: 1.0});
+				$("#bottomBar").addClass('animated fadeIn');
+    		});
+		</script>
+		
+		<!-- Animate.CSS Animation -->
+		<!--
+		<script>
+		$(function() {
+			var animationName = 'animated bounce';
+			var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+			$("#codingmomo").on('click', function() {
+				$(this).addClass(animationName).one(animationEnd, function() {
+					$(this).removeClass(animationName);
+				});
+			});
+		});
+		</script>
+		-->
+		
+		<!-- Type Animation -->
+		<script>
+		    $(function() {
+		        $(".typed").typed( {
+		            strings: ["Coming Soon."],
+		            typeSpeed: 40,
+		            startDelay: 1500,
+		            backDelay:1000,
+		            smartBack:true,
+		            callback: function() {
+		            	/*$('.typed').siblings('.typed-cursor').delay(600).animate({color: 'rgba(0, 0, 0, 0)'});*/
+						<!-- Do something when typing completes -->
+		  			}
+		        });
+		    });
+	    </script>
+	
+	</body>
+	
+</html>

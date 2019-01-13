@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Fun Money</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="fun money">
+    <meta property="og:description" content="Fun Money™ surfaces the most interesting and important money stories of the week, from breaking news, music releases, throwbacks, rising stars, drama, and more. All delivered straight to your inbox.">
+
+    <link href="./files/css" rel="stylesheet">
+    <link rel="stylesheet" href="./files/normalize.css">
+    <link rel="stylesheet" href="./files/skeleton.css">
+
+    <link rel="icon" href="./files/favicon.ico">
+
+    <style>
+        * {
+            overflow-x: hidden;
+        }
+
+        #video-background {
+            /*  making the video fullscreen  */
+            position: fixed;
+            right: 0; 
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            /* opacity: 0.1; */
+            background: #0A0419;
+        }
+
+        body {
+            background: #0A0419;
+            color: #fff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 400;
+            font-size: 1.75em;
+        }
+
+        a {
+            text-decoration: none;
+            color: #26daff;
+        }
+
+        a:hover {
+            color: #26daff;
+            border-bottom: 1px solid #2EBEA9;
+        }
+
+        input {
+            color: #000
+        }
+
+        input[type="submit"] {
+            text-transform: none;
+            letter-spacing: normal;
+            font-size: 0.75em;
+            position: relative;
+            top: -1px;
+            overflow: hidden;
+        }
+
+        #logo {
+            position: relative;
+            max-width:100%;
+            max-height:100%;
+            padding-top: 72px;
+            padding-bottom: 32px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <video id="video-background" muted="" playsinline="" autoplay="" loop="">
+        <source src="./files/bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <div class="row" style="margin-top: 20%">
+            <div class="six columns">
+                <object id="logo" type="image/svg+xml" data="./files/logo.svg"></object>
+                <p>Fun Money™ is a millenial and gen Z-focused newsletter that surfaces the most interesting and useful articles around how to save, invest, and think about money. All delivered straight to your inbox.</p>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="six columns" style="margin-top: 20px">
+                <form action="https://ink.us7.list-manage.com/subscribe/post?u=4ab2e46d40ea81eac29e87cc6&amp;id=32383c317c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <label for="emailAddress">Join the waitlist.</label>
+                    <input type="email" style="width: 250px" name="EMAIL" id="mce-EMAIL" placeholder="your@email.com">
+                    <input class="button-primary" id="mc-embedded-subscribe" type="submit" value="Request Early Access">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="six columns">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p>© 2019. Super Awesome Ink. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            document.getElementById('video-background').setAttribute('src',
+                './files/bg.mp4');
+            document.getElementById('video-background').load();
+            document.getElementById('video-background').play();
+        }
+    </script> 
+
+
+</body></html>
